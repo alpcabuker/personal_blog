@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    font-family: sans-serif;
+    background-image:url(japan-background-digital-art.jpg) ;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+    .avatar img {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    margin-top: 5%;
+}
+.center{
+    width: 750px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 650px;
+    text-align: center;
+    border-radius: 35px;
+}
+.content{
+    padding: 30px;
+}
+h1{
+    color:burlywood;
+}
+.content h2 ,
+p{
+    font-weight: lighter;
+    letter-spacing: 1px;
+    width: 80%;
+    margin: 10px auto;
+}
+.content h3 {
+    margin-top: 20px;
+}
+
+div.Social i {
+    padding: 0 20px;
+    font-size: 50px;
+    color: rgb(255,255,255,0.6);
+    transition: 0.4s;
+}
+
+div.Social i:hover{
+    color: rgb(255,255,255,1);
+}
+
+@media screen and (max-width:700px){
+.center{
+    width: 400px;
+    height: 600px;
+}
+
+h1{
+    font-size: 15px;
+}
+h2{
+    font-size: 15px;
+}
+p{
+    width: 70%;
+    font-size: 12px;
+} 
+
+h3{
+font-size: 14px;
+
+}
+.Social a i {
+    font-size: 30px;
+    margin-top: -20px;
+} 
+
+} 
+    
+    

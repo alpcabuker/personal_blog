@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login Panel</title>
+    <link rel="stylesheet" href="~/Web-Admin-Panel/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="contact-form">
+            <img src="~/Web-Admin-Panel/img/WhatsApp Image 2024-08-22 at 16. (1).jpg" class="admin-img">
+            <h2>Admin Login</h2>
+            @using (Html.BeginForm("Index", "Login", FormMethod.Post))
+            {
+                <div class="txtb">
+                    <input type="text" name="username" placeholder="User Name">
+                </div>
+                <div class="txtb">
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <input type="submit" class="logbtn" value="Login">
+            }
+        </div>
+    </div>
+</body>
+</html>
+

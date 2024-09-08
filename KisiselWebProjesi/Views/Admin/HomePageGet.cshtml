@@ -1,0 +1,31 @@
+﻿@model KisiselWebProjesi.Models.Classes.HomePage
+@{
+    ViewBag.Title = "HomePageGet";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="mt-4">Home Page Update</h2>
+<hr />
+@using (Html.BeginForm("HomePageUpdate", "Admin", FormMethod.Post))
+{
+    @Html.LabelFor(x => x.id)
+    @Html.TextBoxFor(x => x.id, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+    @Html.LabelFor(x => x.name)
+    @Html.TextBoxFor(x => x.name, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.profil)
+    @Html.TextBoxFor(x => x.profil, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.explanation)
+    @Html.TextAreaFor(x => x.explanation, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.title)
+    @Html.TextBoxFor(x => x.title, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.communication)
+    @Html.TextBoxFor(x => x.communication, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Home Page Update</button>
+}
+

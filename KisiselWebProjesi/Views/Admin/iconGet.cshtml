@@ -1,0 +1,23 @@
+﻿@model KisiselWebProjesi.Models.Classes.icons
+@{
+    ViewBag.Title = "iconGet";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>iconGet</h2>
+<br />
+@using (Html.BeginForm("iconUpdate", "Admin", FormMethod.Post))
+{
+    @Html.LabelFor(x => x.id)
+    @Html.TextBoxFor(x => x.id, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+    @Html.LabelFor(x => x.icon)
+    @Html.TextBoxFor(x => x.icon, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.link)
+    @Html.TextBoxFor(x => x.link, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">IconUpdate</button>
+}
+
+
